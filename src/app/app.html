@@ -1,344 +1,1087 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!--header section start-->
+<header class="header">
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo-white-1x.png" width="120" alt="logo"
+                                                           class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="ti-menu"></span>
+            </button>
 
-<style>
-  :host {
-    --bright-blue: oklch(51.01% 0.274 263.83);
-    --electric-violet: oklch(53.18% 0.28 296.97);
-    --french-violet: oklch(47.66% 0.246 305.88);
-    --vivid-pink: oklch(69.02% 0.277 332.77);
-    --hot-red: oklch(61.42% 0.238 15.34);
-    --orange-red: oklch(63.32% 0.24 31.68);
+            <div class="collapse navbar-collapse main-menu justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link page-scroll dropdown-toggle" href="#" id="navbarDropdownHome" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                        <div class="dropdown-menu submenu" aria-labelledby="navbarDropdownHome">
+                            <a class="dropdown-item" href="index.html">Demo Template 1</a>
+                            <a class="dropdown-item" href="index-2.html">Demo Template 2</a>
+                            <a class="dropdown-item" href="index-3.html">Demo Template 3</a>
+                            <a class="dropdown-item" href="index-4.html">Demo Template 4</a>
+                            <a class="dropdown-item" href="index-5.html">Demo Template 5</a>
+                            <a class="dropdown-item" href="index-6.html">Demo Template 6</a>
+                            <a class="dropdown-item" href="index-7.html">Demo Template 7</a>
+                            <a class="dropdown-item" href="index-8.html">Demo Template 8 <span class="badge text-bg-warning">New</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#screenshots">Screenshots</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link page-scroll dropdown-toggle" href="#" id="navbarDropdownPage" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pages
+                        </a>
+                        <div class="dropdown-menu submenu" aria-labelledby="navbarDropdownPage">
+                            <a class="dropdown-item" href="basic-login.html">Login Page 1</a>
+                            <a class="dropdown-item" href="login.html">Login Page 2</a>
+                            <a class="dropdown-item" href="basic-sign-up.html">Signup Page 1</a>
+                            <a class="dropdown-item" href="sign-up.html">Signup Page 2</a>
+                            <a class="dropdown-item" href="password-reset.html">Password Reset</a>
+                            <a class="dropdown-item" href="change-password.html">Change Password</a>
+                            <a class="dropdown-item" href="download.html">Download Page</a>
+                            <a class="dropdown-item" href="review.html">Review Page</a>
+                            <a class="dropdown-item" href="faq.html">FAQ Page</a>
+                            <a class="dropdown-item" href="404.html">404 Page</a>
+                            <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                            <a class="dropdown-item" href="thank-you.html">Thank You</a>
+                            <a class="dropdown-item" href="team.html">Team Page <span class="badge text-bg-danger badge-pill ms-2">New</span></a>
+                            <a class="dropdown-item" href="team-single.html">Team Single <span class="badge text-bg-danger badge-pill ms-2">New</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link page-scroll dropdown-toggle" href="#" id="navbarBlogPage" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Blog <span class="custom-nav-badge badge text-bg-danger badge-pill">New</span>
+                        </a>
 
-    --gray-900: oklch(19.37% 0.006 300.98);
-    --gray-700: oklch(36.98% 0.014 302.71);
-    --gray-400: oklch(70.9% 0.015 304.04);
+                        <div class="dropdown-menu submenu" aria-labelledby="navbarBlogPage">
+                            <a class="dropdown-item" href="blog-default.html">Blog Grid</a>
+                            <a class="dropdown-item" href="blog-left-sidebar.html">Blog Left Sidebar</a>
+                            <a class="dropdown-item" href="blog-single-right-sidebar.html">Details Right Sidebar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
 
-    --red-to-pink-to-purple-vertical-gradient: linear-gradient(
-      180deg,
-      var(--orange-red) 0%,
-      var(--vivid-pink) 50%,
-      var(--electric-violet) 100%
-    );
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+</header>
+<!--header section end-->
 
-    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(
-      90deg,
-      var(--orange-red) 0%,
-      var(--vivid-pink) 50%,
-      var(--electric-violet) 100%
-    );
+<!--body content wrap start-->
+<div class="main">
 
-    --pill-accent: var(--bright-blue);
+    <!--hero section start-->
+    <section class="hero-section pt-100 background-img"
+             style="background: url('img/app-hero-bg.jpg')no-repeat center center / cover">
+        <div class="container">
+            <div class="row align-items-center justify-content-between py-5">
+                <div class="col-md-7 col-lg-6 col-xl-5">
+                    <div class="hero-content-left text-white">
+                        <h1 class="text-white fw-bold">Brainstorming for Desired Usability</h1>
+                        <p class="lead">
+                            Our design projects are fresh and simple and will benefit your business greatly. Learn more
+                            about our work!
+                        </p>
 
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: block;
-    height: 100dvh;
-  }
+                        <form action="#" method="post" class="subscribe-form">
+                            <div class="d-flex align-items-center">
+                                <input type="text" class="form-control input" id="email" name="email"
+                                       placeholder="info&#64;yourdomain.com">
+                                <input type="submit" class="button btn solid-btn" id="submit" value="Subscribe">
+                            </div>
+                        </form>
 
-  h1 {
-    font-size: 3.125rem;
-    color: var(--gray-900);
-    font-weight: 500;
-    line-height: 100%;
-    letter-spacing: -0.125rem;
-    margin: 0;
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-      "Segoe UI Symbol";
-  }
+                        <div class="video-promo-content py-4 d-flex align-items-center">
+                            <a href="https://www.youtube.com/watch?v=9No-FiEInLA"
+                               class="popup-youtube video-play-icon-without-bip video-play-icon me-3"><span class="ti-control-play"></span></a> Watch Video Overview
 
-  p {
-    margin: 0;
-    color: var(--gray-700);
-  }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <div class="hero-animation-img">
+                        <img src="img/app-product.png" alt="app" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-img-absolute">
+            <img src="img/hero-bg-shape-1.svg" alt="wave shape" class="img-fluid">
+        </div>
+    </section>
+    <!--hero section end-->
 
-  main {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    box-sizing: inherit;
-    position: relative;
-  }
+    <!--promo section start-->
+    <section class="promo-section ptb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-8">
+                    <div class="section-heading text-center mb-5">
+                        <h2>Why Peoples Love AppCo?</h2>
+                        <p class="lead">
+                            Following reasons show advantages of adding AppCo to your lead pages, demos and
+                            checkouts evisculate interoperable imperatives rather.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center equal">
+                <div class="col-md-6 col-xl-4">
+                    <div class="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
+                        <div class="circle-icon mb-5">
+                            <span class="ti-vector text-white"></span>
+                        </div>
+                        <h5>Clean Design</h5>
+                        <p>Increase sales by showing true dynamics of your website.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
+                        <div class="circle-icon mb-5">
+                            <span class="ti-lock text-white"></span>
+                        </div>
+                        <h5>Secure Data</h5>
+                        <p>Build your online store’s trust using Social Proof & Urgency.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="single-promo single-promo-hover single-promo-1 rounded text-center white-bg p-5 h-100">
+                        <div class="circle-icon mb-5">
+                            <span class="ti-eye text-white"></span>
+                        </div>
+                        <h5>Retina Ready</h5>
+                        <p>Realize importance of social proof in customer’s purchase decision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--promo section end-->
 
-  .angular-logo {
-    max-width: 9.2rem;
-  }
+    <!--overflow block start-->
+    <div class="overflow-hidden">
+        <!--about us section start-->
+        <section id="about" class="about-us ptb-100 background-shape-img">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md-7 col-xl-6">
+                        <div class="about-content-left section-heading">
+                            <h2>Use Your Android or ios Device <br>
+                                to Manage Everything</h2>
 
-  .content {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 700px;
-    margin-bottom: 3rem;
-  }
-
-  .content h1 {
-    margin-top: 1.75rem;
-  }
-
-  .content p {
-    margin-top: 1.5rem;
-  }
-
-  .divider {
-    width: 1px;
-    background: var(--red-to-pink-to-purple-vertical-gradient);
-    margin-inline: 0.5rem;
-  }
-
-  .pill-group {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
-
-  .pill {
-    display: flex;
-    align-items: center;
-    --pill-accent: var(--bright-blue);
-    background: color-mix(in srgb, var(--pill-accent) 5%, transparent);
-    color: var(--pill-accent);
-    padding-inline: 0.75rem;
-    padding-block: 0.375rem;
-    border-radius: 2.75rem;
-    border: 0;
-    transition: background 0.3s ease;
-    font-family: var(--inter-font);
-    font-size: 0.875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4rem;
-    letter-spacing: -0.00875rem;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
-  .pill:hover {
-    background: color-mix(in srgb, var(--pill-accent) 15%, transparent);
-  }
-
-  .pill-group .pill:nth-child(6n + 1) {
-    --pill-accent: var(--bright-blue);
-  }
-  .pill-group .pill:nth-child(6n + 2) {
-    --pill-accent: var(--electric-violet);
-  }
-  .pill-group .pill:nth-child(6n + 3) {
-    --pill-accent: var(--french-violet);
-  }
-
-  .pill-group .pill:nth-child(6n + 4),
-  .pill-group .pill:nth-child(6n + 5),
-  .pill-group .pill:nth-child(6n + 6) {
-    --pill-accent: var(--hot-red);
-  }
-
-  .pill-group svg {
-    margin-inline-start: 0.25rem;
-  }
-
-  .social-links {
-    display: flex;
-    align-items: center;
-    gap: 0.73rem;
-    margin-top: 1.5rem;
-  }
-
-  .social-links path {
-    transition: fill 0.3s ease;
-    fill: var(--gray-400);
-  }
-
-  .social-links a:hover svg path {
-    fill: var(--gray-900);
-  }
-
-  @media screen and (max-width: 650px) {
-    .content {
-      flex-direction: column;
-      width: max-content;
-    }
-
-    .divider {
-      height: 1px;
-      width: 100%;
-      background: var(--red-to-pink-to-purple-horizontal-gradient);
-      margin-block: 1.5rem;
-    }
-  }
-</style>
-
-<main class="main">
-  <div class="content">
-    <div class="left-side">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 982 239"
-        fill="none"
-        class="angular-logo"
-      >
-        <g clip-path="url(#a)">
-          <path
-            fill="url(#b)"
-            d="M388.676 191.625h30.849L363.31 31.828h-35.758l-56.215 159.797h30.848l13.174-39.356h60.061l13.256 39.356Zm-65.461-62.675 21.602-64.311h1.227l21.602 64.311h-44.431Zm126.831-7.527v70.202h-28.23V71.839h27.002v20.374h1.392c2.782-6.71 7.2-12.028 13.255-15.956 6.056-3.927 13.584-5.89 22.503-5.89 8.264 0 15.465 1.8 21.684 5.318 6.137 3.518 10.964 8.673 14.319 15.382 3.437 6.71 5.074 14.81 4.992 24.383v76.175h-28.23v-71.92c0-8.019-2.046-14.237-6.219-18.819-4.173-4.5-9.819-6.791-17.102-6.791-4.91 0-9.328 1.063-13.174 3.272-3.846 2.128-6.792 5.237-9.001 9.328-2.046 4.009-3.191 8.918-3.191 14.728ZM589.233 239c-10.147 0-18.82-1.391-26.103-4.091-7.282-2.7-13.092-6.382-17.511-10.964-4.418-4.582-7.528-9.655-9.164-15.219l25.448-6.136c1.145 2.372 2.782 4.663 4.991 6.954 2.209 2.291 5.155 4.255 8.837 5.81 3.683 1.554 8.428 2.291 14.074 2.291 8.019 0 14.647-1.964 19.884-5.81 5.237-3.845 7.856-10.227 7.856-19.064v-22.665h-1.391c-1.473 2.946-3.601 5.892-6.383 9.001-2.782 3.109-6.464 5.645-10.965 7.691-4.582 2.046-10.228 3.109-17.101 3.109-9.165 0-17.511-2.209-25.039-6.545-7.446-4.337-13.42-10.883-17.757-19.474-4.418-8.673-6.628-19.473-6.628-32.565 0-13.091 2.21-24.301 6.628-33.383 4.419-9.082 10.311-15.955 17.839-20.7 7.528-4.746 15.874-7.037 25.039-7.037 7.037 0 12.846 1.145 17.347 3.518 4.582 2.373 8.182 5.236 10.883 8.51 2.7 3.272 4.746 6.382 6.137 9.327h1.554v-19.8h27.821v121.749c0 10.228-2.454 18.737-7.364 25.447-4.91 6.709-11.538 11.7-20.048 15.055-8.509 3.355-18.165 4.991-28.884 4.991Zm.245-71.266c5.974 0 11.047-1.473 15.302-4.337 4.173-2.945 7.446-7.118 9.573-12.519 2.21-5.482 3.274-12.027 3.274-19.637 0-7.609-1.064-14.155-3.274-19.8-2.127-5.646-5.318-10.064-9.491-13.255-4.174-3.11-9.329-4.746-15.384-4.746s-11.537 1.636-15.792 4.91c-4.173 3.272-7.365 7.772-9.492 13.418-2.128 5.727-3.191 12.191-3.191 19.392 0 7.2 1.063 13.745 3.273 19.228 2.127 5.482 5.318 9.736 9.573 12.764 4.174 3.027 9.41 4.582 15.629 4.582Zm141.56-26.51V71.839h28.23v119.786h-27.412v-21.273h-1.227c-2.7 6.709-7.119 12.191-13.338 16.446-6.137 4.255-13.747 6.382-22.748 6.382-7.855 0-14.81-1.718-20.783-5.237-5.974-3.518-10.72-8.591-14.075-15.382-3.355-6.709-5.073-14.891-5.073-24.464V71.839h28.312v71.921c0 7.609 2.046 13.664 6.219 18.083 4.173 4.5 9.655 6.709 16.365 6.709 4.173 0 8.183-.982 12.111-3.028 3.927-2.045 7.118-5.072 9.655-9.082 2.537-4.091 3.764-9.164 3.764-15.218Zm65.707-109.395v159.796h-28.23V31.828h28.23Zm44.841 162.169c-7.61 0-14.402-1.391-20.457-4.091-6.055-2.7-10.883-6.791-14.32-12.109-3.518-5.319-5.237-11.946-5.237-19.801 0-6.791 1.228-12.355 3.765-16.773 2.536-4.419 5.891-7.937 10.228-10.637 4.337-2.618 9.164-4.664 14.647-6.055 5.4-1.391 11.046-2.373 16.856-3.027 7.037-.737 12.683-1.391 17.102-1.964 4.337-.573 7.528-1.555 9.574-2.782 1.963-1.309 3.027-3.273 3.027-5.973v-.491c0-5.891-1.718-10.391-5.237-13.664-3.518-3.191-8.51-4.828-15.056-4.828-6.955 0-12.356 1.473-16.447 4.5-4.009 3.028-6.71 6.546-8.183 10.719l-26.348-3.764c2.046-7.282 5.483-13.336 10.31-18.328 4.746-4.909 10.638-8.59 17.511-11.045 6.955-2.455 14.565-3.682 22.912-3.682 5.809 0 11.537.654 17.265 2.045s10.965 3.6 15.711 6.71c4.746 3.109 8.51 7.282 11.455 12.6 2.864 5.318 4.337 11.946 4.337 19.883v80.184h-27.166v-16.446h-.9c-1.719 3.355-4.092 6.464-7.201 9.328-3.109 2.864-6.955 5.237-11.619 6.955-4.828 1.718-10.229 2.536-16.529 2.536Zm7.364-20.701c5.646 0 10.556-1.145 14.729-3.354 4.173-2.291 7.364-5.237 9.655-9.001 2.292-3.763 3.355-7.854 3.355-12.273v-14.155c-.9.737-2.373 1.391-4.5 2.046-2.128.654-4.419 1.145-7.037 1.636-2.619.491-5.155.9-7.692 1.227-2.537.328-4.746.655-6.628.901-4.173.572-8.019 1.472-11.292 2.781-3.355 1.31-5.973 3.11-7.855 5.401-1.964 2.291-2.864 5.318-2.864 8.918 0 5.237 1.882 9.164 5.728 11.782 3.682 2.782 8.51 4.091 14.401 4.091Zm64.643 18.328V71.839h27.412v19.965h1.227c2.21-6.955 5.974-12.274 11.292-16.038 5.319-3.763 11.456-5.645 18.329-5.645 1.555 0 3.355.082 5.237.163 1.964.164 3.601.328 4.91.573v25.938c-1.227-.41-3.109-.819-5.646-1.146a58.814 58.814 0 0 0-7.446-.49c-5.155 0-9.738 1.145-13.829 3.354-4.091 2.209-7.282 5.236-9.655 9.164-2.373 3.927-3.519 8.427-3.519 13.5v70.448h-28.312ZM222.077 39.192l-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
-          />
-          <path
-            fill="url(#c)"
-            d="M388.676 191.625h30.849L363.31 31.828h-35.758l-56.215 159.797h30.848l13.174-39.356h60.061l13.256 39.356Zm-65.461-62.675 21.602-64.311h1.227l21.602 64.311h-44.431Zm126.831-7.527v70.202h-28.23V71.839h27.002v20.374h1.392c2.782-6.71 7.2-12.028 13.255-15.956 6.056-3.927 13.584-5.89 22.503-5.89 8.264 0 15.465 1.8 21.684 5.318 6.137 3.518 10.964 8.673 14.319 15.382 3.437 6.71 5.074 14.81 4.992 24.383v76.175h-28.23v-71.92c0-8.019-2.046-14.237-6.219-18.819-4.173-4.5-9.819-6.791-17.102-6.791-4.91 0-9.328 1.063-13.174 3.272-3.846 2.128-6.792 5.237-9.001 9.328-2.046 4.009-3.191 8.918-3.191 14.728ZM589.233 239c-10.147 0-18.82-1.391-26.103-4.091-7.282-2.7-13.092-6.382-17.511-10.964-4.418-4.582-7.528-9.655-9.164-15.219l25.448-6.136c1.145 2.372 2.782 4.663 4.991 6.954 2.209 2.291 5.155 4.255 8.837 5.81 3.683 1.554 8.428 2.291 14.074 2.291 8.019 0 14.647-1.964 19.884-5.81 5.237-3.845 7.856-10.227 7.856-19.064v-22.665h-1.391c-1.473 2.946-3.601 5.892-6.383 9.001-2.782 3.109-6.464 5.645-10.965 7.691-4.582 2.046-10.228 3.109-17.101 3.109-9.165 0-17.511-2.209-25.039-6.545-7.446-4.337-13.42-10.883-17.757-19.474-4.418-8.673-6.628-19.473-6.628-32.565 0-13.091 2.21-24.301 6.628-33.383 4.419-9.082 10.311-15.955 17.839-20.7 7.528-4.746 15.874-7.037 25.039-7.037 7.037 0 12.846 1.145 17.347 3.518 4.582 2.373 8.182 5.236 10.883 8.51 2.7 3.272 4.746 6.382 6.137 9.327h1.554v-19.8h27.821v121.749c0 10.228-2.454 18.737-7.364 25.447-4.91 6.709-11.538 11.7-20.048 15.055-8.509 3.355-18.165 4.991-28.884 4.991Zm.245-71.266c5.974 0 11.047-1.473 15.302-4.337 4.173-2.945 7.446-7.118 9.573-12.519 2.21-5.482 3.274-12.027 3.274-19.637 0-7.609-1.064-14.155-3.274-19.8-2.127-5.646-5.318-10.064-9.491-13.255-4.174-3.11-9.329-4.746-15.384-4.746s-11.537 1.636-15.792 4.91c-4.173 3.272-7.365 7.772-9.492 13.418-2.128 5.727-3.191 12.191-3.191 19.392 0 7.2 1.063 13.745 3.273 19.228 2.127 5.482 5.318 9.736 9.573 12.764 4.174 3.027 9.41 4.582 15.629 4.582Zm141.56-26.51V71.839h28.23v119.786h-27.412v-21.273h-1.227c-2.7 6.709-7.119 12.191-13.338 16.446-6.137 4.255-13.747 6.382-22.748 6.382-7.855 0-14.81-1.718-20.783-5.237-5.974-3.518-10.72-8.591-14.075-15.382-3.355-6.709-5.073-14.891-5.073-24.464V71.839h28.312v71.921c0 7.609 2.046 13.664 6.219 18.083 4.173 4.5 9.655 6.709 16.365 6.709 4.173 0 8.183-.982 12.111-3.028 3.927-2.045 7.118-5.072 9.655-9.082 2.537-4.091 3.764-9.164 3.764-15.218Zm65.707-109.395v159.796h-28.23V31.828h28.23Zm44.841 162.169c-7.61 0-14.402-1.391-20.457-4.091-6.055-2.7-10.883-6.791-14.32-12.109-3.518-5.319-5.237-11.946-5.237-19.801 0-6.791 1.228-12.355 3.765-16.773 2.536-4.419 5.891-7.937 10.228-10.637 4.337-2.618 9.164-4.664 14.647-6.055 5.4-1.391 11.046-2.373 16.856-3.027 7.037-.737 12.683-1.391 17.102-1.964 4.337-.573 7.528-1.555 9.574-2.782 1.963-1.309 3.027-3.273 3.027-5.973v-.491c0-5.891-1.718-10.391-5.237-13.664-3.518-3.191-8.51-4.828-15.056-4.828-6.955 0-12.356 1.473-16.447 4.5-4.009 3.028-6.71 6.546-8.183 10.719l-26.348-3.764c2.046-7.282 5.483-13.336 10.31-18.328 4.746-4.909 10.638-8.59 17.511-11.045 6.955-2.455 14.565-3.682 22.912-3.682 5.809 0 11.537.654 17.265 2.045s10.965 3.6 15.711 6.71c4.746 3.109 8.51 7.282 11.455 12.6 2.864 5.318 4.337 11.946 4.337 19.883v80.184h-27.166v-16.446h-.9c-1.719 3.355-4.092 6.464-7.201 9.328-3.109 2.864-6.955 5.237-11.619 6.955-4.828 1.718-10.229 2.536-16.529 2.536Zm7.364-20.701c5.646 0 10.556-1.145 14.729-3.354 4.173-2.291 7.364-5.237 9.655-9.001 2.292-3.763 3.355-7.854 3.355-12.273v-14.155c-.9.737-2.373 1.391-4.5 2.046-2.128.654-4.419 1.145-7.037 1.636-2.619.491-5.155.9-7.692 1.227-2.537.328-4.746.655-6.628.901-4.173.572-8.019 1.472-11.292 2.781-3.355 1.31-5.973 3.11-7.855 5.401-1.964 2.291-2.864 5.318-2.864 8.918 0 5.237 1.882 9.164 5.728 11.782 3.682 2.782 8.51 4.091 14.401 4.091Zm64.643 18.328V71.839h27.412v19.965h1.227c2.21-6.955 5.974-12.274 11.292-16.038 5.319-3.763 11.456-5.645 18.329-5.645 1.555 0 3.355.082 5.237.163 1.964.164 3.601.328 4.91.573v25.938c-1.227-.41-3.109-.819-5.646-1.146a58.814 58.814 0 0 0-7.446-.49c-5.155 0-9.738 1.145-13.829 3.354-4.091 2.209-7.282 5.236-9.655 9.164-2.373 3.927-3.519 8.427-3.519 13.5v70.448h-28.312ZM222.077 39.192l-8.019 125.923L137.387 0l84.69 39.192Zm-53.105 162.825-57.933 33.056-57.934-33.056 11.783-28.556h92.301l11.783 28.556ZM111.039 62.675l30.357 73.803H80.681l30.358-73.803ZM7.937 165.115 0 39.192 84.69 0 7.937 165.115Z"
-          />
-        </g>
-        <defs>
-          <radialGradient
-            id="c"
-            cx="0"
-            cy="0"
-            r="1"
-            gradientTransform="rotate(118.122 171.182 60.81) scale(205.794)"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#FF41F8" />
-            <stop offset=".707" stop-color="#FF41F8" stop-opacity=".5" />
-            <stop offset="1" stop-color="#FF41F8" stop-opacity="0" />
-          </radialGradient>
-          <linearGradient
-            id="b"
-            x1="0"
-            x2="982"
-            y1="192"
-            y2="192"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#F0060B" />
-            <stop offset="0" stop-color="#F0070C" />
-            <stop offset=".526" stop-color="#CC26D5" />
-            <stop offset="1" stop-color="#7702FF" />
-          </linearGradient>
-          <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
-        </defs>
-      </svg>
-      <h1>Hello, {{ title() }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+                            <div class="single-feature mb-4 mt-5">
+                                <div class="icon-box-wrap d-flex align-items-center mb-2">
+                                    <div class="me-3 icon-box">
+                                        <img src="img/image-icon-1.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p class="mb-0">Proactively syndicate open-source e-markets after low-risk high-yield
+                                        synergy. Professionally
+                                        simplify visionary technology.</p>
+                                </div>
+                            </div>
+                            <div class="single-feature mb-4">
+                                <div class="icon-box-wrap mb-2">
+                                    <div class="me-3 icon-box">
+                                        <img src="img/image-icon-2.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p class="mb-0">Intrinsicly aggregate cutting-edge internal or "organic" sources through pandemic manufactured products. Synergistically.</p>
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="single-feature mb-4">
+                                <div class="icon-box-wrap mb-2">
+                                    <div class="me-3 icon-box">
+                                        <img src="img/image-icon-3.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p class="mb-0">Completely administrate empowered e-tailers after extensive experiences. Holisticly leverage existing quality networks.</p>
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="single-feature mb-4">
+                                <div class="icon-box-wrap mb-2">
+                                    <div class="me-3 icon-box">
+                                        <img src="img/image-icon-4.png" alt="icon image" class="img-fluid">
+                                    </div>
+                                    <p class="mb-0">Intrinsicly incentivize functionalized metrics whereas go forward networks. Collaboratively fabricate clicks-and-mortar intellectual.</p>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="about-content-right">
+                            <img src="img/image-11.png" alt="about us" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about us section end-->
     </div>
-    <div class="divider" role="separator" aria-label="Divider"></div>
-    <div class="right-side">
-      <div class="pill-group">
-        @for (item of [
-          { title: 'Explore the Docs', link: 'https://angular.dev' },
-          { title: 'Learn with Tutorials', link: 'https://angular.dev/tutorials' },
-          { title: 'Prompt and best practices for AI', link: 'https://angular.dev/ai/develop-with-ai'},
-          { title: 'CLI Docs', link: 'https://angular.dev/tools/cli' },
-          { title: 'Angular Language Service', link: 'https://angular.dev/tools/language-service' },
-          { title: 'Angular DevTools', link: 'https://angular.dev/tools/devtools' },
-        ]; track item.title) {
-          <a
-            class="pill"
-            [href]="item.link"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>{{ item.title }}</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="14"
-              viewBox="0 -960 960 960"
-              width="14"
-              fill="currentColor"
-            >
-              <path
-                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
-              />
-            </svg>
-          </a>
-        }
-      </div>
-      <div class="social-links">
-        <a
-          href="https://github.com/angular/angular"
-          aria-label="Github"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg
-            width="25"
-            height="24"
-            viewBox="0 0 25 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            alt="Github"
-          >
-            <path
-              d="M12.3047 0C5.50634 0 0 5.50942 0 12.3047C0 17.7423 3.52529 22.3535 8.41332 23.9787C9.02856 24.0946 9.25414 23.7142 9.25414 23.3871C9.25414 23.0949 9.24389 22.3207 9.23876 21.2953C5.81601 22.0377 5.09414 19.6444 5.09414 19.6444C4.53427 18.2243 3.72524 17.8449 3.72524 17.8449C2.61064 17.082 3.81137 17.0973 3.81137 17.0973C5.04697 17.1835 5.69604 18.3647 5.69604 18.3647C6.79321 20.2463 8.57636 19.7029 9.27978 19.3881C9.39052 18.5924 9.70736 18.0499 10.0591 17.7423C7.32641 17.4347 4.45429 16.3765 4.45429 11.6618C4.45429 10.3185 4.9311 9.22133 5.72065 8.36C5.58222 8.04931 5.16694 6.79833 5.82831 5.10337C5.82831 5.10337 6.85883 4.77319 9.2121 6.36459C10.1965 6.09082 11.2424 5.95546 12.2883 5.94931C13.3342 5.95546 14.3801 6.09082 15.3644 6.36459C17.7023 4.77319 18.7328 5.10337 18.7328 5.10337C19.3942 6.79833 18.9789 8.04931 18.8559 8.36C19.6403 9.22133 20.1171 10.3185 20.1171 11.6618C20.1171 16.3888 17.2409 17.4296 14.5031 17.7321C14.9338 18.1012 15.3337 18.8559 15.3337 20.0084C15.3337 21.6552 15.3183 22.978 15.3183 23.3779C15.3183 23.7009 15.5336 24.0854 16.1642 23.9623C21.0871 22.3484 24.6094 17.7341 24.6094 12.3047C24.6094 5.50942 19.0999 0 12.3047 0Z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://x.com/angular"
-          aria-label="X"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            alt="X"
-          >
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://www.youtube.com/channel/UCbn1OgGei-DV7aSRo_HaAiw"
-          aria-label="Youtube"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg
-            width="29"
-            height="20"
-            viewBox="0 0 29 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            alt="Youtube"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M27.4896 1.52422C27.9301 1.96749 28.2463 2.51866 28.4068 3.12258C29.0004 5.35161 29.0004 10 29.0004 10C29.0004 10 29.0004 14.6484 28.4068 16.8774C28.2463 17.4813 27.9301 18.0325 27.4896 18.4758C27.0492 18.9191 26.5 19.2389 25.8972 19.4032C23.6778 20 14.8068 20 14.8068 20C14.8068 20 5.93586 20 3.71651 19.4032C3.11363 19.2389 2.56449 18.9191 2.12405 18.4758C1.68361 18.0325 1.36732 17.4813 1.20683 16.8774C0.613281 14.6484 0.613281 10 0.613281 10C0.613281 10 0.613281 5.35161 1.20683 3.12258C1.36732 2.51866 1.68361 1.96749 2.12405 1.52422C2.56449 1.08095 3.11363 0.76113 3.71651 0.596774C5.93586 0 14.8068 0 14.8068 0C14.8068 0 23.6778 0 25.8972 0.596774C26.5 0.76113 27.0492 1.08095 27.4896 1.52422ZM19.3229 10L11.9036 5.77905V14.221L19.3229 10Z"
-            />
-          </svg>
-        </a>
-      </div>
+    <!--overflow block end-->
+
+
+    <!--feature section start-->
+    <section id="features" class="feature-section ptb-100">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-between">
+                <div class="col-md-4">
+                    <div class="download-img">
+                        <img src="img/image-14.png" alt="download" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="feature-contents section-heading">
+                        <h2>Share your Photos with <br>
+                            Friends Easily</h2>
+                        <p>Objectively deliver professional value with diverse web-readiness.
+                            Collaboratively transition wireless customer service without goal-oriented catalysts for
+                            change. Collaboratively.</p>
+                        <p>Uniquely simplify sustainable applications whereas adaptive schemas. Competently brand performance based content and.</p>
+
+                        <ul class="list-inline mt-5">
+                            <li class="list-inline-item">
+                                <div class="me-3 icon-box border">
+                                    <img src="img/image-icon-2.png" alt="icon image" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="me-3 icon-box border">
+                                    <img src="img/image-icon-3.png" alt="icon image" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="me-3 icon-box border">
+                                    <img src="img/image-icon-4.png" alt="icon image" class="img-fluid">
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <div class="me-3 icon-box border">
+                                    <img src="img/image-icon-1.png" alt="icon image" class="img-fluid">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--feature section end-->
+
+    <!--download section start-->
+    <section class="download-section pt-100 background-img"
+             style="background: url('img/app-hero-bg.jpg')no-repeat center center / cover">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-7">
+                    <div class="download-content text-white pb-100">
+                        <h2 class="text-white">Start Managing your Apps
+                            Business, more Faster</h2>
+                        <p class="lead">Objectively deliver professional value with diverse web-readiness.
+                            Collaboratively transition wireless customer service without goal-oriented catalysts for
+                            change. Collaboratively.</p>
+
+                        <div class="download-btn">
+                            <a href="#" class="btn google-play-btn me-3"><span class="ti-android"></span> Google
+                                Play</a>
+                            <a href="#" class="btn app-store-btn"><span class="ti-apple"></span> App Store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="download-img d-flex align-items-end">
+                        <img src="img/app-hand-top.png" alt="download" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--download section end-->
+
+
+    <!--overflow block start-->
+    <div class="overflow-hidden">
+        <!--our pricing packages section start-->
+        <section id="pricing" class="package-section background-shape-right ptb-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="section-heading text-center mb-5">
+                            <h2>Affordable Pricing and Packages <br>Choose your Best One</h2>
+                            <p class="lead">
+                                Distinctively brand cutting-edge imperatives through synergistic infrastructures customize low-risk high-yield processes rather than user friendly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card text-center single-pricing-pack p-5">
+                            <h5 class="mb-2">Basic</h5>
+                            <div class="pricing-img mt-3 mb-4">
+                                <img src="img/basic.svg" alt="pricing img" class="img-fluid">
+                            </div>
+
+                            <div class="card-body p-0">
+                                <ul class="list-unstyled text-sm pricing-feature-list">
+                                    <li>5 Users access same time</li>
+                                    <li>Integrated eCommerce</li>
+                                    <li>Customization interface</li>
+                                    <li>Weekly updated</li>
+                                    <li>24/7 Phone Support</li>
+                                    <li>Event Analytics</li>
+                                </ul>
+                                <div class="py-4 border-0 pricing-header">
+                                    <div class="h1 text-center mb-0 color-secondary">$<span class="price fw-semibold">29</span></div>
+                                </div>
+                                <a href="#" class="btn outline-btn" target="_blank">Purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card text-center popular-price single-pricing-pack p-5">
+                            <h5 class="mb-2">Standard</h5>
+                            <div class="pricing-img mt-3 mb-4">
+                                <img src="img/standard.svg" alt="pricing img" class="img-fluid">
+                            </div>
+
+                            <div class="card-body p-0">
+                                <ul class="list-unstyled text-sm pricing-feature-list">
+                                    <li>10 Users access same time</li>
+                                    <li>Integrated eCommerce</li>
+                                    <li>Customization interface</li>
+                                    <li>Daily updated</li>
+                                    <li>24/7 Phone Support</li>
+                                    <li>Event Analytics</li>
+                                </ul>
+                                <div class="py-4 border-0 pricing-header">
+                                    <div class="h1 text-center mb-0 color-secondary">$<span class="price fw-semibold">145</span></div>
+                                </div>
+                                <a href="#" class="btn solid-btn" target="_blank">Purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card text-center single-pricing-pack p-5">
+                            <h5 class="mb-2">Unlimited</h5>
+                            <div class="pricing-img mt-3 mb-4">
+                                <img src="img/unlimited.svg" alt="pricing img" class="img-fluid">
+                            </div>
+
+                            <div class="card-body p-0">
+                                <ul class="list-unstyled text-sm pricing-feature-list">
+                                    <li>20 Users access same time</li>
+                                    <li>Integrated eCommerce</li>
+                                    <li>Fully Customization interface</li>
+                                    <li>Free updated</li>
+                                    <li>24/7 Phone Support</li>
+                                    <li>Event Analytics</li>
+                                </ul>
+                                <div class="py-4 border-0 pricing-header">
+                                    <div class="h1 text-center mb-0 color-secondary">$<span class="price fw-semibold">249</span></div>
+                                </div>
+                                <a href="#" class="btn outline-btn" target="_blank">Purchase now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+                    <p class="mb-2">If you need custom services or Need more? <a href="#" class="color-secondary">
+                        Contact us
+                    </a></p>
+                </div>
+                <!--pricing faq start-->
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <div id="accordion-1" class="accordion accordion-faq">
+                            <!-- Accordion card 1 -->
+                            <div class="card accordion-item">
+                                <div class="card-header accordion-header py-4" id="heading-1-1" data-bs-toggle="collapse" role="button"
+                                     data-bs-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                                    <h6 class="mb-0"><span class="ti-receipt me-3 color-secondary"></span> Which license do I need?</h6>
+                                </div>
+                                <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
+                                     data-bs-parent="#accordion-1">
+                                    <div class="card-body accordion-body">
+                                        <p>Uniquely leverage other's distinctive infomediaries rather than leveraged supply chains. Continually seize distributed collaboration and idea-sharing whereas user.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card 2 -->
+                            <div class="card accordion-item">
+                                <div class="card-header py-4 accordion-header" id="heading-1-2" data-bs-toggle="collapse" role="button"
+                                     data-bs-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
+                                    <h6 class="mb-0"><span class="ti-gallery me-3 color-secondary"></span> How do I get access to a theme?</h6>
+                                </div>
+                                <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
+                                     data-bs-parent="#accordion-1">
+                                    <div class="card-body accordion-body">
+                                        <p>Rapidiously incentivize virtual e-commerce and exceptional e-tailers. Progressively network focused catalysts for change without orthogonal benefits. Dramatically empower.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card 3 -->
+                            <div class="card accordion-item">
+                                <div class="card-header py-4 accordion-header" id="heading-1-3" data-bs-toggle="collapse" role="button"
+                                     data-bs-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
+                                    <h6 class="mb-0"><span class="ti-wallet me-3 color-secondary"></span> How do I see previous orders?
+                                    </h6>
+                                </div>
+                                <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
+                                     data-bs-parent="#accordion-1">
+                                    <div class="card-body accordion-body">
+                                        <p>Proactively monetize long-term high-impact innovation and scalable relationships. Dynamically mesh principle-centered functionalities before next-generation best practices. Distinctively empower.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="accordion-2" class="accordion accordion-faq">
+                            <!-- Accordion card 1 -->
+                            <div class="card accordion-item">
+                                <div class="card-header py-4 accordion-header" id="heading-2-1" data-bs-toggle="collapse" role="button"
+                                     data-bs-target="#collapse-2-1" aria-expanded="false" aria-controls="collapse-2-1">
+                                    <h6 class="mb-0"><span class="ti-receipt me-3 color-secondary"></span> Which license do I need?</h6>
+                                </div>
+                                <div id="collapse-2-1" class="collapse" aria-labelledby="heading-2-1"
+                                     data-bs-parent="#accordion-2">
+                                    <div class="card-body accordion-body">
+                                        <p>Distinctively recaptiualize customer directed channels before installed base communities. Continually disintermediate distinctive web services vis-a-vis team building e-commerce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card 2 -->
+                            <div class="card accordion-item">
+                                <div class="card-header py-4 accordion-header" id="heading-2-2" data-bs-toggle="collapse" role="button"
+                                     data-bs-target="#collapse-2-2" aria-expanded="false" aria-controls="collapse-2-2">
+                                    <h6 class="mb-0"><span class="ti-lock me-3 color-secondary"></span> How do I get access to a theme?</h6>
+                                </div>
+                                <div id="collapse-2-2" class="collapse" aria-labelledby="heading-2-2"
+                                     data-bs-parent="#accordion-2">
+                                    <div class="card-body accordion-body">
+                                        <p>Quickly recaptiualize revolutionary meta-services and multimedia based channels. Seamlessly impact diverse deliverables rather than cooperative strategic theme areas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion card 3 -->
+                            <div class="card accordion-item">
+                                <div class="card-header py-4 accordion-header" id="heading-2-3" data-bs-toggle="collapse" role="button"
+                                     data-bs-target="#collapse-2-3" aria-expanded="false" aria-controls="collapse-2-3">
+                                    <h6 class="mb-0"><span class="ti-widget me-3 color-secondary"></span> How do I see previous orders?
+                                    </h6>
+                                </div>
+                                <div id="collapse-2-3" class="collapse" aria-labelledby="heading-2-3"
+                                     data-bs-parent="#accordion-2">
+                                    <div class="card-body accordion-body">
+                                        <p>Efficiently supply B2B networks vis-a-vis best-of-breed schemas. Dramatically parallel task reliable technology with cross functional core competencies. Phosfluorescently.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--pricing faq end-->
+            </div>
+        </section>
+        <!--our pricing packages section end-->
     </div>
-  </div>
-</main>
+    <!--overflow block end-->
 
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+    <!--testimonial section start-->
+    <section class="testimonial-section ptb-100">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <div class="section-heading mb-5">
+                        <h2>What Clients Say About Us</h2>
+                        <p class="lead">
+                            Rapidiously morph transparent internal or "organic" sources whereas resource sucking
+                            e-business. Conveniently innovate compelling internal.
+                        </p>
+
+                        <div class="client-section-wrap d-flex flex-row align-items-center">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><img src="img/client-1-color.png" width="85" alt="client"
+                                                                  class="img-fluid"></li>
+                                <li class="list-inline-item"><img src="img/client-6-color.png" width="85" alt="client"
+                                                                  class="img-fluid"></li>
+                                <li class="list-inline-item"><img src="img/client-3-color.png" width="85" alt="client"
+                                                                  class="img-fluid"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="owl-carousel owl-theme client-testimonial arrow-indicator">
+                        <div class="item">
+                            <div class="testimonial-quote-wrap">
+                                <div class="media author-info mb-3">
+                                    <div class="author-img me-3">
+                                        <img src="img/client-1.jpg" alt="client" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mb-0">John Charles</h5>
+                                        <span>Google</span>
+                                    </div>
+                                </div>
+                                <div class="client-say">
+                                    <p> <img src="img/quote.png" alt="quote" class="img-fluid"> Interactively optimize fully researched expertise vis-a-vis plug-and-play relationships. Intrinsicly develop viral core competencies for fully tested customer service. Enthusiastically create next-generation growth strategies and.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote-wrap">
+                                <div class="media author-info mb-3">
+                                    <div class="author-img me-3">
+                                        <img src="img/client-2.jpg" alt="client" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mb-0">Arabella Ora</h5>
+                                        <span>Amazon</span>
+                                    </div>
+                                </div>
+                                <div class="client-say">
+                                    <p><img src="img/quote.png" alt="quote" class="img-fluid">  Rapidiously develop user friendly growth strategies after extensive initiatives. Conveniently grow innovative benefits through fully tested deliverables. Rapidiously utilize focused platforms through end-to-end schemas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote-wrap">
+                                <div class="media author-info mb-3">
+                                    <div class="author-img me-3">
+                                        <img src="img/client-1.jpg" alt="client" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mb-0">Jeremy Jere</h5>
+                                        <span>Themetags</span>
+                                    </div>
+                                </div>
+                                <div class="client-say">
+                                    <p><img src="img/quote.png" alt="quote" class="img-fluid"> Objectively synthesize client-centered e-tailers for maintainable channels. Holisticly administrate customer directed vortals whereas tactical functionalities. Energistically monetize reliable imperatives through client-centric best practices. Collaboratively.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-quote-wrap">
+                                <div class="media author-info mb-3">
+                                    <div class="author-img me-3">
+                                        <img src="img/client-1.jpg" alt="client" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mb-0">John Charles</h5>
+                                        <span>Google</span>
+                                    </div>
+                                </div>
+                                <div class="client-say">
+                                    <p><img src="img/quote.png" alt="quote" class="img-fluid"> Enthusiastically innovate B2C data without clicks-and-mortar convergence. Monotonectally deliver compelling testing procedures vis-a-vis B2B testing procedures. Competently evisculate integrated resources whereas global processes. Enthusiastically.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--testimonial section end-->
+
+    <!--our video promo section start-->
+    <section class="video-promo ptb-100 background-img"
+             style="background: url('img/hero-bg-1.jpg')no-repeat center center / cover">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="video-promo-content mt-4 text-center">
+                        <a href="https://www.youtube.com/watch?v=9No-FiEInLA"
+                           class="popup-youtube video-play-icon d-inline-block"><span class="ti-control-play"></span></a>
+                        <h5 class="mt-4 text-white">Watch video overview</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--our video promo section end-->
+
+    <!--screenshots section start-->
+    <section id="screenshots" class="screenshots-section ptb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-heading text-center">
+                        <h2>App Screenshots Looks Awesome</h2>
+                        <p class="lead">Credibly synthesize multimedia based networks vis-a-vis top-line growth strategies. Continually leverage existing worldwide interfaces </p>
+                    </div>
+                </div>
+            </div>
+            <!--start app screen carousel-->
+            <div class="screen-slider-content mt-5">
+                <div class="screenshot-frame"></div>
+                <div class="screen-carousel owl-carousel owl-theme dot-indicator">
+                    <img src="img/01.png" class="img-fluid" alt="screenshots">
+                    <img src="img/02.png" class="img-fluid" alt="screenshots">
+                    <img src="img/03.png" class="img-fluid" alt="screenshots">
+                    <img src="img/04.png" class="img-fluid" alt="screenshots">
+                    <img src="img/05.png" class="img-fluid" alt="screenshots">
+                    <img src="img/06.png" class="img-fluid" alt="screenshots">
+                </div>
+            </div>
+            <!--end app screen carousel-->
+
+        </div>
+    </section>
+    <!--screenshots section end-->
 
 
-<router-outlet />
+    <!--our team section start-->
+    <section id="team" class="team-member-section ptb-100 gray-light-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-8">
+                    <div class="section-heading text-center mb-5">
+                        <h2>Our Team Members</h2>
+                        <p class="lead">
+                            Following reasons show advantages of adding AppCo to your lead pages, foster market positioning products without demos and checkouts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-team-member position-relative">
+                        <div class="team-image">
+                            <img src="img/team-4.jpg" alt="Team Members" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="mb-0">Edna Mason</h5>
+                            <h6>Senior Designer</h6>
+                            <ul class="list-inline team-social social-icon mt-4 text-white">
+                                <li class="list-inline-item"><a href="#"><span class="ti-facebook"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-twitter"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-github"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-dribbble"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-team-member position-relative">
+                        <div class="team-image">
+                            <img src="img/team-1.jpg" alt="Team Members" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="mb-0">Edna Mason</h5>
+                            <h6>Senior Designer</h6>
+                            <ul class="list-inline team-social social-icon mt-4 text-white">
+                                <li class="list-inline-item"><a href="#"><span class="ti-facebook"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-twitter"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-github"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-dribbble"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-team-member position-relative">
+                        <div class="team-image">
+                            <img src="img/team-2.jpg" alt="Team Members" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="mb-0">Edna Mason</h5>
+                            <h6>Senior Designer</h6>
+                            <ul class="list-inline team-social social-icon mt-4 text-white">
+                                <li class="list-inline-item"><a href="#"><span class="ti-facebook"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-twitter"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-github"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-dribbble"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-team-member position-relative">
+                        <div class="team-image">
+                            <img src="img/team-3.jpg" alt="Team Members" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info text-white rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <h5 class="mb-0">Edna Mason</h5>
+                            <h6>Senior Designer</h6>
+                            <ul class="list-inline team-social social-icon mt-4 text-white">
+                                <li class="list-inline-item"><a href="#"><span class="ti-facebook"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-twitter"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-github"></span></a></li>
+                                <li class="list-inline-item"><a href="#"><span class="ti-dribbble"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--our team section end-->
+
+    <!--our blog section start-->
+    <section id="blog" class="our-blog-section ptb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-heading mb-5">
+                        <h2>Our Latest News</h2>
+                        <p class="lead">
+                            Enthusiastically drive revolutionary opportunities before emerging leadership. Distinctively
+                            transform tactical methods of resource sucking core.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xl-4">
+                    <div class="single-blog-card card border-0 shadow-sm">
+                        <span class="category position-absolute badge badge-pill text-bg-primary">Lifestyle</span>
+                        <img src="img/blog/1.jpg" class="card-img-top position-relative" alt="blog">
+                        <div class="card-body">
+                            <div class="post-meta mb-2">
+                                <ul class="list-inline meta-list">
+                                    <li class="list-inline-item">Jan 21, 2019</li>
+                                    <li class="list-inline-item"><span>45</span> Comments</li>
+                                    <li class="list-inline-item"><span>10</span> Share</li>
+                                </ul>
+                            </div>
+                            <h3 class="h5 card-title"><a href="#">Appropriately productize fully</a></h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk.</p>
+                            <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="single-blog-card card border-0 shadow-sm">
+                        <span class="category position-absolute badge badge-pill text-bg-danger">Technology</span>
+                        <img src="img/blog/2.jpg" class="card-img-top position-relative" alt="blog">
+                        <div class="card-body">
+                            <div class="post-meta mb-2">
+                                <ul class="list-inline meta-list">
+                                    <li class="list-inline-item">May 26, 2019</li>
+                                    <li class="list-inline-item"><span>30</span> Comments</li>
+                                    <li class="list-inline-item"><span>5</span> Share</li>
+                                </ul>
+                            </div>
+                            <h3 class="h5 card-title"><a href="#">Quickly formulate backend</a></h3>
+                            <p class="card-text">Synergistically engage effective ROI after customer directed partnerships.</p>
+                            <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="single-blog-card card border-0 shadow-sm">
+                        <span class="category position-absolute badge badge-pill text-white bg-info">Science</span>
+                        <img src="img/blog/3.jpg" class="card-img-top" alt="blog">
+                        <div class="card-body">
+                            <div class="post-meta mb-2">
+                                <ul class="list-inline meta-list">
+                                    <li class="list-inline-item">Apr 25, 2019</li>
+                                    <li class="list-inline-item"><span>41</span> Comments</li>
+                                    <li class="list-inline-item"><span>30</span> Share</li>
+                                </ul>
+                            </div>
+                            <h3 class="h5 card-title"><a href="#">Objectively extend extensive</a></h3>
+                            <p class="card-text">Holisticly mesh open-source leadership rather than proactive users. </p>
+                            <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--our blog section end-->
+
+    <!--contact us section start-->
+    <section id="contact" class="contact-us ptb-100 gray-light-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pb-3 message-box d-none">
+                    <div class="alert alert-danger"></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="section-heading">
+                        <h2>Contact With Us</h2>
+                        <p>It's very easy to get in touch with us. Just use the contact form or pay us a
+                            visit for a coffee at the office. Dynamically innovate competitive technology after an
+                            expanded array of leadership.</p>
+                    </div>
+                    <div class="footer-address">
+                        <h6><strong>Head Office</strong></h6>
+                        <p>121 King St, Melbourne VIC 3000, Australia</p>
+                        <ul>
+                            <li><span>Phone: +61 2 8376 6284</span></li>
+                            <li><span>Email : <a href="mailto:hello&#64;yourdomain.com">hello&#64;yourdomain.com</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <form action="#" method="POST" id="contactForm" class="contact-us-form" novalidate="novalidate">
+                        <h5>Reach us quickly</h5>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter name"
+                                           required="required">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mb-3">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email"
+                                           required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mb-3">
+                                    <input type="text" name="phone" value="" class="form-control" id="phone"
+                                           placeholder="Your Phone">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12">
+                                <div class="form-group mb-3">
+                                    <input type="text" name="company" value="" size="40" class="form-control"
+                                           id="company" placeholder="Your Company">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group mb-3">
+                                    <textarea name="message" id="message" class="form-control h-100" rows="7" cols="25"
+                                              placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 mt-3">
+                                <button type="submit" class="btn solid-btn" id="btnContactUs">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="form-message"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact us section end-->
+
+    <!--client section start-->
+    <section class="client-section ptb-100">
+        <div class="container">
+            <!--clients logo start-->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-heading text-center mb-5">
+                        <h2>Trusted by Companies</h2>
+                        <p class="lead">
+                            Rapidiously morph transparent internal or "organic" sources whereas resource sucking
+                            e-business. Conveniently innovate compelling internal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme clients-carousel dot-indicator">
+                        <div class="item single-client">
+                            <img src="img/client-5-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-1-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-6-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-3-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-4-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-5-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-7-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-2-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-1-color.png" alt="client logo" class="client-img">
+                        </div>
+                        <div class="item single-client">
+                            <img src="img/client-3-color.png" alt="client logo" class="client-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--clients logo end-->
+        </div>
+    </section>
+    <!--client section start-->
+
+</div>
+<!--body content wrap end-->
+
+<!--shape image start-->
+<div class="shape-img subscribe-wrap">
+    <img src="img/footer-top-shape.png" alt="footer shape" class="img-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="w-100 position-relative">
+                    <form action="#" method="post" class="subscribe-form subscribe-form-footer d-none d-md-block d-lg-block">
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control input" id="email-footer" name="email"
+                                   placeholder="info&#64;yourdomain.com">
+                            <input type="submit" class="button btn solid-btn" id="submit-footer" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--shape image end-->
+
+<!--footer section start-->
+<footer class="footer-section">
+
+    <!--footer top start-->
+    <div class="footer-top pt-150 background-img-2"
+         style="background: url('img/footer-bg.png')no-repeat center top / cover">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-12 col-lg-4 mb-4 mb-md-4 mb-sm-4 mb-lg-0">
+                    <div class="footer-nav-wrap text-white">
+                        <img src="img/logo-white-1x.png" alt="footer logo" width="120" class="img-fluid mb-3">
+                        <p>Holisticly empower premium architectures without value-added ideas. Seamlessly evolve
+                            cross-platform experiences.</p>
+
+                        <div class="social-list-wrap">
+                            <ul class="social-list list-inline list-unstyled">
+                                <li class="list-inline-item"><a href="#" target="_blank" title="Facebook"><span
+                                        class="ti-facebook"></span></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank" title="Twitter"><span
+                                        class="ti-twitter"></span></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank"
+                                                                title="Instagram"><span class="ti-instagram"></span></a></li>
+                                <li class="list-inline-item"><a href="#" target="_blank"
+                                                                title="printerst"><span class="ti-pinterest"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-4 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
+                            <div class="footer-nav-wrap text-white">
+                                <h5 class="mb-3 text-white">Resources</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#">Help</a></li>
+                                    <li class="mb-2"><a href="#">Events</a></li>
+                                    <li class="mb-2"><a href="#">Live Support</a></li>
+                                    <li class="mb-2"><a href="#">Open Sources</a></li>
+                                    <li class="mb-2"><a href="#">Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
+                            <div class="footer-nav-wrap text-white">
+                                <h5 class="mb-3 text-white">Company</h5>
+                                <ul class="list-unstyled support-list">
+                                    <li class="mb-2">
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#">Careers</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#">Customers</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#">Community</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-4">
+                            <div class="footer-nav-wrap text-white">
+                                <h5 class="mb-3 text-white">Location</h5>
+                                <ul class="list-unstyled support-list">
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-location-pin me-2"></span>
+                                        121 King Melbourne
+                                        <br>Australia 3000
+                                    </li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-mobile me-2"></span> <a
+                                            href="tel:+61283766284"> +61 2 8376 6284</a></li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-email me-2"></span><a
+                                            href="mailto:mail&#64;example.com"> mail&#64;example.com</a></li>
+                                    <li class="mb-2 d-flex align-items-center"><span class="ti-world me-2"></span><a
+                                            href="#"> www.yourdomain.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer bottom copyright start-->
+        <div class="footer-bottom border-gray-light mt-5 py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <div class="copyright-wrap small-text">
+                            <p class="mb-0 text-white">© ThemeTags Design Agency, All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="terms-policy-wrap text-md-end text-start">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a class="small-text" href="#">Terms</a></li>
+                                <li class="list-inline-item"><a class="small-text" href="#">Security</a></li>
+                                <li class="list-inline-item"><a class="small-text" href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer bottom copyright end-->
+    </div>
+    <!--footer top end-->
+</footer>
+<!--footer section end-->
