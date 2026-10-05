@@ -1,0 +1,44 @@
+<section class="ptb-100 pt-150">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-5">
+                <div class="section-heading text-center mb-5">
+                    <h2>Connexion</h2>
+                    <p class="lead">Accédez à vos commandes, vos favoris et vos offres membres StyleBox.</p>
+                </div>
+
+                <form [formGroup]="form" (ngSubmit)="onSubmit($event)" novalidate>
+                    @if (errorMessage(); as message) {
+                        <div class="alert alert-danger" role="alert">{{ message }}</div>
+                    }
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="login-email">Adresse e-mail</label>
+                        <input type="email" class="form-control" id="login-email" formControlName="email"
+                               autocomplete="email" [class.is-invalid]="isInvalid(form.controls.email)">
+                        @if (isInvalid(form.controls.email)) {
+                            <div class="invalid-feedback">Indiquez une adresse e-mail valide.</div>
+                        }
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="login-password">Mot de passe</label>
+                        <input type="password" class="form-control" id="login-password" formControlName="password"
+                               autocomplete="current-password" [class.is-invalid]="isInvalid(form.controls.password)">
+                        @if (isInvalid(form.controls.password)) {
+                            <div class="invalid-feedback">Saisissez votre mot de passe.</div>
+                        }
+                    </div>
+
+                    <button type="submit" class="btn solid-btn w-100" [disabled]="pending()">
+                        {{ pending() ? 'Connexion en cours…' : 'Se connecter' }}
+                    </button>
+                </form>
+
+                <p class="mt-4 mb-0 text-center">
+                    Pas encore de compte ? <a routerLink="/register" fragment="top">Créer un compte</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

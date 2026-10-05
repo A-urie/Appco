@@ -1,0 +1,73 @@
+<section class="ptb-100 pt-150">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-5">
+                <div class="section-heading text-center mb-5">
+                    <h2>Créez votre compte</h2>
+                    <p class="lead">Inscrivez-vous pour suivre vos commandes et profiter des offres réservées aux membres StyleBox.</p>
+                </div>
+
+                <form [formGroup]="form" (ngSubmit)="onSubmit($event)" novalidate>
+                    @if (errorMessage(); as message) {
+                        <div class="alert alert-danger" role="alert">{{ message }}</div>
+                    }
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="register-name">Nom complet</label>
+                        <input type="text" class="form-control" id="register-name" formControlName="fullName"
+                               autocomplete="name" [class.is-invalid]="isInvalid(form.controls.fullName)">
+                        @if (isInvalid(form.controls.fullName)) {
+                            <div class="invalid-feedback">Indiquez votre nom complet (3 caractères minimum).</div>
+                        }
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="register-email">Adresse e-mail</label>
+                        <input type="email" class="form-control" id="register-email" formControlName="email"
+                               autocomplete="email" [class.is-invalid]="isInvalid(form.controls.email)">
+                        @if (isInvalid(form.controls.email)) {
+                            <div class="invalid-feedback">Indiquez une adresse e-mail valide.</div>
+                        }
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="register-password">Mot de passe</label>
+                        <input type="password" class="form-control" id="register-password" formControlName="password"
+                               autocomplete="new-password" [class.is-invalid]="isInvalid(form.controls.password)">
+                        @if (isInvalid(form.controls.password)) {
+                            <div class="invalid-feedback">Le mot de passe doit contenir au moins 8 caractères.</div>
+                        }
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="register-confirm">Confirmer le mot de passe</label>
+                        <input type="password" class="form-control" id="register-confirm" formControlName="confirmPassword"
+                               autocomplete="new-password" [class.is-invalid]="isInvalid(form.controls.confirmPassword)">
+                        @if (isInvalid(form.controls.confirmPassword)) {
+                            <div class="invalid-feedback">Les deux mots de passe doivent être identiques.</div>
+                        }
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input type="checkbox" class="form-check-input" id="register-terms" formControlName="acceptTerms"
+                               [class.is-invalid]="isInvalid(form.controls.acceptTerms)">
+                        <label class="form-check-label" for="register-terms">
+                            J'accepte les conditions d'utilisation et la politique de confidentialité.
+                        </label>
+                        @if (isInvalid(form.controls.acceptTerms)) {
+                            <div class="invalid-feedback">Vous devez accepter les conditions pour créer un compte.</div>
+                        }
+                    </div>
+
+                    <button type="submit" class="btn solid-btn w-100" [disabled]="pending()">
+                        {{ pending() ? 'Création en cours…' : 'Créer mon compte' }}
+                    </button>
+                </form>
+
+                <p class="mt-4 mb-0 text-center">
+                    Vous avez déjà un compte ? <a routerLink="/login" fragment="top">Se connecter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

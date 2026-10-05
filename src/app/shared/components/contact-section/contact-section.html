@@ -1,0 +1,70 @@
+<section id="contact" class="contact-us ptb-100 gray-light-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 pb-3 message-box" [class.d-none]="!result()" [class.d-block]="!!result()">
+                <div class="alert" [class.alert-danger]="result()?.success === false"
+                     [class.alert-success]="result()?.success === true">{{ result()?.message }}</div>
+            </div>
+            <div class="col-md-5">
+                <div class="section-heading">
+                    <h2>Contactez-nous</h2>
+                    <p>Il est très facile de nous joindre : utilisez le formulaire ou passez nous voir en boutique. Nous vous répondons dans les plus brefs délais.</p>
+                </div>
+                <div class="footer-address">
+                    <h5 class="h6"><strong>Siège</strong></h5>
+                    <p>Abidjan, Côte d'Ivoire</p>
+                    <ul>
+                        <li><span>Téléphone : +225 00 00 00 00 00</span></li>
+                        <li><span>E-mail : <a href="mailto:contact&#64;stylebox.ci">contact&#64;stylebox.ci</a></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <form [formGroup]="form" (ngSubmit)="onSubmit($event)" id="contactForm" class="contact-us-form" novalidate>
+                    <h3 class="h5">Écrivez-nous</h3>
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" formControlName="name" id="name" name="name"
+                                       placeholder="Votre nom" aria-label="Votre nom" required="required">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group mb-3">
+                                <input type="email" class="form-control" formControlName="email" id="contact-email" name="email"
+                                       placeholder="Votre e-mail" aria-label="Votre e-mail" required="required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group mb-3">
+                                <input type="tel" formControlName="phone" class="form-control" id="phone" name="phone"
+                                       placeholder="Votre téléphone" aria-label="Votre téléphone" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group mb-3">
+                                <input type="text" formControlName="company" class="form-control" id="company" name="company"
+                                       placeholder="Votre entreprise (facultatif)" aria-label="Votre entreprise (facultatif)" autocomplete="organization">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group mb-3">
+                                <textarea formControlName="message" id="message" class="form-control h-100" rows="7" cols="25"
+                                          placeholder="Votre message" aria-label="Votre message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 mt-3">
+                            <button type="submit" class="btn solid-btn" id="btnContactUs">Envoyer le message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

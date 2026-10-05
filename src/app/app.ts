@@ -1,41 +1,23 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { ThemeScriptLoader } from './core/services/theme-script-loader.service';
+import { SiteFooter } from './shared/components/site-footer/site-footer';
+import { SiteHeader } from './shared/components/site-header/site-header';
 
-const SCRIPTS = [
-  'js/jquery-3.6.1.min.js',
-  'js/bootstrap.bundle.min.js',
-  'js/jquery.magnific-popup.min.js',
-  'js/jquery.easing.min.js',
-  'js/wow.min.js',
-  'js/owl.carousel.min.js',
-  'js/jquery.countdown.min.js',
-  'js/validator.min.js',
-  'js/scripts.js',
-];
-
+/**
+ * Coquille applicative : en-tête, contenu routé et pied de page.
+ * Le contenu de la landing page vit désormais dans `HomePage`.
+ */
 @Component({
   selector: 'app-root',
+  imports: [RouterOutlet, SiteFooter, SiteHeader],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App implements AfterViewInit {
-  async ngAfterViewInit(): Promise<void> {
-    for (const src of SCRIPTS) {
-      await this.loadScript(src);
-    }
-  }
+export class App {
+  private readonly themeScripts = inject(ThemeScriptLoader);
 
-  private loadScript(src: string): Promise<void> {
-    return new Promise((resolve, reject) => {
-      if (document.querySelector(`script[src="${src}"]`)) {
-        resolve();
-        return;
-      }
-      const script = document.createElement('script');
-      script.src = src;
-      script.async = false;
-      script.onload = () => resolve();
-      script.onerror = () => reject(new Error('Impossible de charger ' + src));
-      document.body.appendChild(script);
-    });
+  ngAfterViewInit(): void {
+    void this.themeScripts.load();
   }
 }

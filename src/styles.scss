@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+/* ==========================================================================
+   Styles globaux du projet.
+   Les feuilles de style du template (Bootstrap, Owl Carousel, Magnific Popup,
+   themify icons, style.css et responsive.css) sont declarees dans angular.json
+   afin de beneficier du pipeline de build (minification, hachage, budgets).
+   ========================================================================== */
+
+/* Thème rouge/noir */
+:root {
+    --color-primary: #560606;
+    --color-primary-dark: #6e1111;
+    --color-secondary: #1a1a1a;
+    --color-primary-bg: #470b0b;
+    --color-primary-border: #5a0909;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 60px;
+}
+
+.accordion-faq.accordion > .card .card-header h3 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Overrides pour les classes du template */
+.primary-bg {
+    background: var(--color-primary-bg) !important;
+}
+
+.secondary-bg {
+    background: var(--color-secondary) !important;
+}
+
+.color-primary {
+    color: var(--color-primary) !important;
+}
+
+.color-secondary {
+    color: var(--color-secondary) !important;
+}
+
+.solid-btn,
+.primary-solid-btn,
+.outline-btn:hover,
+.solid-btn:hover,
+.primary-solid-btn:hover {
+    background: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: #ffffff !important;
+}
+
+.outline-btn {
+    border-color: var(--color-primary) !important;
+    color: var(--color-primary) !important;
+    background: transparent !important;
+}
+
+.outline-btn:hover {
+    background: var(--color-primary) !important;
+    color: #ffffff !important;
+}
+
+.primary-solid-btn:hover {
+    background: var(--color-primary-dark) !important;
+    border-color: var(--color-primary-dark) !important;
+    color: #ffffff !important;
+}
+
+a,
+a:hover,
+.btn-link,
+.btn-link:hover,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-primary) !important;
+}
+
+.btn,
+.gradient-btn,
+.solid-btn {
+    box-shadow: none !important;
+}

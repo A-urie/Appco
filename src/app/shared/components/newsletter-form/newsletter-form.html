@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)" novalidate>
+    <div class="d-flex align-items-center">
+        <input type="email" class="form-control input" [class.is-invalid]="hasError()"
+               [id]="emailInputId()" formControlName="email" name="email"
+               placeholder="votre@email.com" aria-label="Votre adresse e-mail">
+        <input type="submit" class="button btn solid-btn" [id]="submitButtonId()" value="S'abonner">
+    </div>
+    @if (hasError()) {
+        <div class="invalid-feedback d-block">Veuillez saisir une adresse e-mail valide.</div>
+    }
+    @if (hasSuccess()) {
+        <div class="valid-feedback d-block">Merci, vous êtes inscrit à la newsletter.</div>
+    }
+</form>

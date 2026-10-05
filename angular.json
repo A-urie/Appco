@@ -23,22 +23,42 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "externalDependencies": [
+              "owl.video.play.png"
+            ],
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "ignore": [
+                  "css/**",
+                  "fonts/**"
+                ]
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "public/css/bootstrap.min.css",
+              "public/css/magnific-popup.css",
+              "public/css/themify-icons.css",
+              "public/css/animate.min.css",
+              "public/css/owl.carousel.min.css",
+              "public/css/owl.theme.default.min.css",
+              "public/css/style.css",
+              "public/css/responsive.css"
             ]
           },
           "configurations": {
             "production": {
+              "optimization": {
+                "styles": {
+                  "inlineCritical": false
+                }
+              },
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "700kB",
                   "maximumError": "1MB"
                 },
                 {

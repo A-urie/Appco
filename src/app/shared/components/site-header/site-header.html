@@ -1,0 +1,38 @@
+<!--header section start-->
+<header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-3" routerLink="/">StyleBox</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Afficher le menu">
+                <span class="ti-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse main-menu justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    @for (link of links; track link.fragment) {
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/" [fragment]="link.fragment">{{ link.label }}</a>
+                        </li>
+                    }
+                    @if (auth.isAuthenticated()) {
+                        <li class="nav-item">
+                            <span class="nav-link text-white">Bonjour {{ auth.user()?.fullName }}</span>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="nav-link btn btn-link p-0 align-baseline" (click)="auth.logout()">Déconnexion</button>
+                        </li>
+                    } @else {
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/login" fragment="top">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link solid-btn" routerLink="/register" fragment="top">Inscription</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--header section end-->
